@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+
+<body id="body">
+
+    <div class="main_box">
+        <div style="width:60px; margin: 20px;position: relative; z-index: 5;"><img src="lambo.png" style="width:100%;"></div>
+        <div style="margin: 20px;">
+            <div><i class="fa fa-bars bar_class" style="color:#fff;font-size: 20px;" id="dropdown_button"></i></div>
+            <div class="dropdown_menu">
+                <ul>
+                    <li>Hero</li>
+                    <li>Zero</li>
+                    <li>Biro</li>
+                    <li>Piro</li>
+                    <li>Silo</li>
+                    <li>Salo</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#dropdown_button').click(function() {
+                $('.dropdown_menu').toggleClass('active');
+            });
+        });
+
+
+        /* From here */
+        /* const arrayCar = ['car.jpg', 'car_2.jpg', 'car_3.jpg'];
+        var i = 0;
+        var imageChnageInterval = setInterval(function() {
+            if (i == 3) {
+                i = 0;
+            }
+            $('#body').css('background-image', 'url(' + arrayCar[i] + ')');
+            i++;
+        }, 4000); */
+    </script>
+
+    <!-- 
+
+
+        If you want to remove then
+        remove id=body from body tag and
+        remove above javascript, non of use in static page.
+        and in css property remove #body and inside properties.
+        Thats it. Your complete code.
+
+
+     -->
+</body>
+
+</html>
